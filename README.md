@@ -4,5 +4,5 @@ This project created for lerning code.
 
 #### Test coverage
 
-*https://github.com/codeclimate/php-test-reporter
-*https://docs.travis-ci.com/user/code-climate/#PHP
+* https://codeclimate.com/github/zmshurik/project-lvl1-s152
+* https://travis-ci.org/zmshurik/project-lvl1-s152
