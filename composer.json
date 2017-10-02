@@ -1,0 +1,13 @@
+{        
+    "name": "zmshurik/brain-games",
+    "type": "game",
+    "description": "The project where I'm lerning to code :)",    
+    "authors": [
+        {
+            "name": "Alexander Kurakov",
+            "email": "zmshurik@yandex.ru"
+        }
+    ],
+    "require": {},
+    "bin": [ "bin/brain-games" ]
+}
