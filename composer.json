@@ -1,6 +1,9 @@
 {        
     "name": "zmshurik/brain-games",
-    "bin": [ "bin/brain-games" ],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
     "type": "game",
     "description": "The project where I'm lerning to code :)",    
     "authors": [
@@ -19,6 +22,9 @@
         "phpcs" : "vendor/squizlabs/php_codesniffer/bin/phpcs"
     },
     "autoload": {        
-        "files": [ "src/Cli.php" ]        
+        "files": [ 
+            "src/Cli.php",
+            "src/BrainEven.php"
+        ]
     }        
 }
