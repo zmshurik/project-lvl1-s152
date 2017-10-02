@@ -1,2 +1,4 @@
 #!/usr/bin/php
-Welcome to the Brain Games!
+<?php
+
+echo 'Welcome to the Brain Games!' . PHP_EOL;
