@@ -1,1 +1,2 @@
-script: make nstall lint
+language: php
+script: make install lint
