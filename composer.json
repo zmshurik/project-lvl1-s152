@@ -1,5 +1,6 @@
 {        
     "name": "zmshurik/brain-games",
+    "bin": [ "bin/brain-games" ],
     "type": "game",
     "description": "The project where I'm lerning to code :)",    
     "authors": [
@@ -8,11 +9,16 @@
             "email": "zmshurik@yandex.ru"
         }
     ],
-    "autoload": {        
-        "files": [ "src/Cli.php" ]        
-    },
     "require": {
         "wp-cli/php-cli-tools": "*" 
     },
-    "bin": [ "bin/brain-games" ]
+    "require-dev": {
+        "squizlabs/php_codesniffer" : "*"
+    },
+    "scripts": {
+        "phpcs" : "vendor/squizlabs/php_codesniffer/bin/phpcs"
+    },
+    "autoload": {        
+        "files": [ "src/Cli.php" ]        
+    }        
 }
