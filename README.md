@@ -1,8 +1,7 @@
-### zmshurik/BrainGames
+#### zmshurik/BrainGames
 
 This project created for lerning code.
 
-#### Test coverage
-
-* https://codeclimate.com/github/zmshurik/project-lvl1-s152
-* https://travis-ci.org/zmshurik/project-lvl1-s152
+##### Bages
+[![Build Status](https://travis-ci.org/zmshurik/project-lvl1-s152.svg?branch=master)](https://travis-ci.org/zmshurik/project-lvl1-s152)
+[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/zmshurik/project-lvl1-s152)
