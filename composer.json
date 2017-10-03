@@ -24,6 +24,7 @@
     "autoload": {        
         "files": [ 
             "src/Cli.php",
+            "src/game.php",
             "src/games/BrainEven.php"
         ]
     }        
