@@ -19,12 +19,12 @@
         "squizlabs/php_codesniffer" : "*"
     },
     "scripts": {
-        "phpcs" : "vendor/squizlabs/php_codesniffer/bin/phpcs"
+        "phpcs" : "phpcs"
     },
     "autoload": {        
         "files": [ 
             "src/Cli.php",
-            "src/BrainEven.php"
+            "src/games/BrainEven.php"
         ]
     }        
 }
