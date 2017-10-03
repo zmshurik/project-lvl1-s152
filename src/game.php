@@ -5,6 +5,7 @@ namespace BrainGames\Game;
 use function \cli\line;
 use function \cli\prompt;
 use function \BrainGames\Games\BrainEven\game as BrainEven;
+use function \BrainGames\Games\BrainCalc\game as BrainCalc;
 
 function play($gameName)
 {
@@ -12,6 +13,9 @@ function play($gameName)
     switch ($gameName) {
         case 'BrainEven':
             $game = BrainEven();
+            break;
+        case 'BrainCalc':
+            $game = BrainCalc();
     }
     if (isset($game)) {
         line($game('getGameDescription'));
@@ -45,4 +49,9 @@ function play($gameName)
 function runBrainEven()
 {
     play('BrainEven');
+}
+
+function runBrainCalc()
+{
+    play('BrainCalc');
 }

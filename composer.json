@@ -2,7 +2,8 @@
     "name": "zmshurik/brain-games",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "type": "game",
     "description": "The project where I'm lerning to code :)",    
@@ -25,7 +26,8 @@
         "files": [ 
             "src/Cli.php",
             "src/game.php",
-            "src/games/BrainEven.php"
+            "src/games/BrainEven.php",
+            "src/games/BrainCalc.php"
         ]
     }        
 }
