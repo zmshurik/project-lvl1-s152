@@ -12,12 +12,9 @@ function game()
     $getAnswer = function ($question) use ($isEven) {
         return $isEven($question) ? 'yes' : 'no';
     };
-    $getGameData = function () use ($getAnswer) {
+    return function () use ($getAnswer) {
         $question = \rand(1, 100);
         return [$question, $getAnswer($question)];
-    };
-    return function () use ($getGameData) {
-        return $getGameData();
     };
 }
 
