@@ -2,6 +2,8 @@
 
 namespace BrainGames\Games\BrainEven;
 
+use function \BrainGames\GameEngine\play;
+
 function game()
 {
     $questions = [\rand(1, 100), \rand(1, 100), \rand(1, 100)];
@@ -23,4 +25,10 @@ function game()
                 return $isCorrect($userAnswer, $correctAnswer);
         }
     };
+}
+
+function playGame()
+{
+    $game = game();
+    play($game);
 }

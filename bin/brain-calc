@@ -3,6 +3,4 @@
 
 require_once __DIR__ . '/../autoload.php';
 
-use function \BrainGames\Game\runBrainCalc;
-
-runBrainCalc();
+BrainGames\Games\BrainCalc\playGame();

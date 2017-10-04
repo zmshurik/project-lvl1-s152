@@ -1,22 +1,13 @@
 <?php
 
-namespace BrainGames\Game;
+namespace BrainGames\GameEngine;
 
 use function \cli\line;
 use function \cli\prompt;
-use function \BrainGames\Games\BrainEven\game as BrainEven;
-use function \BrainGames\Games\BrainCalc\game as BrainCalc;
 
-function play($gameName)
+function play($game)
 {
     line('Welcome to the Brain Games!');
-    switch ($gameName) {
-        case 'BrainEven':
-            $game = BrainEven();
-            break;
-        case 'BrainCalc':
-            $game = BrainCalc();
-    }
     line($game('getGameDescription'));
     line();
     $name = prompt('May I have your name?');
@@ -41,14 +32,4 @@ function play($gameName)
     }, 1);
     $message = $result ? 'Congratulations, %s!' : 'Let\'s try again, %s!';
     line($message, $name);
-}
-
-function runBrainEven()
-{
-    play('BrainEven');
-}
-
-function runBrainCalc()
-{
-    play('BrainCalc');
 }

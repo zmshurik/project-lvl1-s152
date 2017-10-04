@@ -2,6 +2,8 @@
 
 namespace BrainGames\Games\BrainCalc;
 
+use function \BrainGames\GameEngine\play;
+
 function game()
 {
     $games = [];
@@ -42,4 +44,10 @@ function game()
                 return $isCorrect($userAnswer, $correctAnswer);
         }
     };
+}
+
+function playGame()
+{
+    $game = game();
+    play($game);
 }
