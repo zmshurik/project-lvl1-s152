@@ -13,25 +13,21 @@ function game()
         $number2 = \random_int(1, 100);
         switch ($operation) {
             case 'addition':
-                return ['question' => "$number1 + $number2", 'answer' => $number1 + $number2];
+                return ["$number1 + $number2", $number1 + $number2];
             case 'subtraction':
-                return ['question' => "$number1 - $number2", 'answer' => $number1 - $number2];
+                return ["$number1 - $number2", $number1 - $number2];
             case 'multiplication':
-                return ['question' => "$number1 * $number2", 'answer' => $number1 * $number2];
+                return ["$number1 * $number2", $number1 * $number2];
         }
     };
-    return function ($message) use ($getGameData) {
-        switch ($message) {
-            case 'getGameDescription':
-                return 'What is the result of the expression?';
-            case 'getGameData':
-                return $getGameData();
-        }
+    return function () use ($getGameData) {
+        return $getGameData();
     };
 }
 
 function playGame()
 {
     $game = game();
+    $description = 'What is the result of the expression?';
     play($game);
 }
