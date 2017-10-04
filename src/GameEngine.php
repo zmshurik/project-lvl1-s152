@@ -19,7 +19,7 @@ function play($game)
         $gameData = $game('getGameData');
         line("Question: " . $gameData['question']);
         $answer = prompt('Your answer');
-        if (!$game('isCorrect', $answer, $gameData['answer'])) {
+        if ($answer != $gameData['answer']) {
             line("'$answer' is wrong answer ;(. Correct answer was '" . $gameData['answer'] . "'.");
             break;
         }

@@ -20,17 +20,12 @@ function game()
                 return ['question' => "$number1 * $number2", 'answer' => $number1 * $number2];
         }
     };
-    $isCorrect = function ($userAnswer, $correctAnswer) {
-        return $correctAnswer == $userAnswer;
-    };
-    return function ($message, $userAnswer = '', $correctAnswer = 0) use ($getGameData, $isCorrect) {
+    return function ($message) use ($getGameData) {
         switch ($message) {
             case 'getGameDescription':
                 return 'What is the result of the expression?';
             case 'getGameData':
                 return $getGameData();
-            case 'isCorrect':
-                return $isCorrect($userAnswer, $correctAnswer);
         }
     };
 }
