@@ -29,11 +29,11 @@ function play($game, $description)
     $stepAmount = 3;
     for ($step = 1; $step <= $stepAmount; $step++) {
         $gameData = $game();
-        $result = step($gameData);
-        if (!$result) {
+        $isWin = step($gameData);
+        if (!$isWin) {
             break;
         }
     }
-    $message = $result ? 'Congratulations, %s!' : 'Let\'s try again, %s!';
+    $message = $isWin ? 'Congratulations, %s!' : 'Let\'s try again, %s!';
     line($message, $name);
 }
