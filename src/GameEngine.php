@@ -26,8 +26,8 @@ function play($game, $description)
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line();
-    $stepAmount = 3;
-    for ($step = 1; $step <= $stepAmount; $step++) {
+    define('STEP_AMOUNT', 3);
+    for ($step = 1; $step <= STEP_AMOUNT; $step++) {
         $gameData = $game();
         $isWin = step($gameData);
         if (!$isWin) {
