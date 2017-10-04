@@ -4,6 +4,8 @@ namespace BrainGames\Games\BrainEven;
 
 use function \BrainGames\GameEngine\play;
 
+define('DESCRIPTION_OF_BRAIN_EVEN', 'Answer "yes" if number even otherwise answer "no".');
+
 function game()
 {
     $isEven = function ($number) {
@@ -21,6 +23,5 @@ function game()
 function playGame()
 {
     $game = game();
-    $description = 'Answer "yes" if number even otherwise answer "no".';
-    play($game, $description);
+    play($game, DESCRIPTION_OF_BRAIN_EVEN);
 }
