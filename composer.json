@@ -6,7 +6,8 @@
         "bin/brain-calc",
         "bin/brain-gcd",
         "bin/brain-balance",
-        "bin/brain-progression"
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
     "type": "game",
     "description": "The project where I'm lerning to code :)",    
@@ -33,7 +34,8 @@
             "src/games/BrainCalc.php",
             "src/games/BrainGCD.php",
             "src/games/BrainBalance.php",
-            "src/games/BrainProgression.php"
+            "src/games/BrainProgression.php",
+            "src/games/BrainPrime.php"
         ]
     }        
 }
